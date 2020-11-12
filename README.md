@@ -16,3 +16,5 @@ The packages I've used:
 install.packages(c("shiny", "shinydashboard", "shinydashboardPlus", "plyr", "tidyverse",
 "ggpubr", "reshape","RColorBrewer", "repr", "plotly" ))
 ```
+## Questions?
+If you have any questions, please feel free to contact (diego.fedreira@udc.es).
