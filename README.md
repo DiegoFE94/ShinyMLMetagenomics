@@ -13,5 +13,6 @@ All data used in this Shiny comes from experiments conducted in MLMetaGenomics a
 The packages I've used:
 
 ```{r}
-install.packages(c("shiny", "shinydashboard", "shinydashboardPlus", "plyr", "tidyverse", "ggpubr", "reshape","RColorBrewer", "repr", "plotly" ))
+install.packages(c("shiny", "shinydashboard", "shinydashboardPlus", "plyr", "tidyverse",
+"ggpubr", "reshape","RColorBrewer", "repr", "plotly" ))
 ```
