@@ -1,7 +1,7 @@
 #### Prueba Shiny ######
 #Despues copiar y pegar en la consola des aqui hasta abajo#
 
-ui <- dashboardPagePlus(skin = "purple",
+ui <- dashboardPagePlus(skin = "blue",
                         dashboardHeaderPlus( title = tagList(
                           span(class = "logo-lg", "MLMetaGenomics"), 
                           img(src = "algoritmo.svg", width="35",height="35"))),
@@ -50,7 +50,7 @@ ui <- dashboardPagePlus(skin = "purple",
                                       to predict those seroconverted patients not previously diagnosed with diabetes but who have expressed at least two of the autoantibodies analyzed.",align = "justify"),
                                     br(),
                                     h4("Graphical Abstract"),
-                                      img(src="GraphicalAbstract.jpg", align = "justify",height = 562, width = 1000)),
+                                      img(src="GraphicalAbstract.png", align = "justify",height = 562, width = 1000)),
                             tabItem(tabName = "benchmark",
                                     box(title = " ", status = "primary", solidHeader = TRUE, width = 12,
                                         plotlyOutput("SinFS")), 
@@ -274,14 +274,14 @@ ui <- dashboardPagePlus(skin = "purple",
                                       wanted to test the ability of a Machine Learning model based on metagenomic data to stratify infants at risk of having type 1 diabetes (T1D)
                                       in healthy and sick children." ,align = "justify"),
                                     p("In this Shiny we find a first section that corresponds to the cover where we can observe the summary of the published article as well as a presentation of the authors.
-In the second section, a basal experiment was carried out to evaluate at what taxonomic level we would focus the study, although later all of them were analyzed.
-In the third section a 'Feature Selection' process was carried out at all taxonomic levels to see how it influenced the performance of the models.
-In the fourth section, a multimodal analysis of the model that had obtained the best performance and a review of the species used by it ('Metagenomic signature') was carried out.
-In the last section it is shown that the metagenomic signature obtained also with the best model is also capable of discerning between a third stage between healthy and sick called 'seroconversion'.", align= "justify"),
+                                    In the second section, a basal experiment was carried out to evaluate at what taxonomic level we would focus the study, although later all of them were analyzed.
+                                    In the third section a 'Feature Selection' process was carried out at all taxonomic levels to see how it influenced the performance of the models.
+                                    In the fourth section, a multimodal analysis of the model that had obtained the best performance and a review of the species used by it ('Metagenomic signature') was carried out.
+                                    In the last section it is shown that the metagenomic signature obtained also with the best model is also capable of discerning between a third stage between healthy and sick called 'seroconversion'.", align= "justify"),
                                     h4("Code"),
-                                    "El código utilizado en el proyecto está disponible en el",a(href= "https://github.com/DiegoFE94/MLMetaGenomics", "GitHub."),
+                                    "The code used in the project is available on the",a(href= "https://github.com/DiegoFE94/MLMetaGenomics", "GitHub."),
                                     br(),
-                                    "El código de este Shiny estará disponible en el",a(href= "https://github.com/DiegoFE94", "GitHub."),
+                                    "The code of this Shiny is available on the ",a(href= "https://github.com/DiegoFE94/ShinyMLMetagenomics", "GitHub."),
                                     h4("Data source"),
                                     p("The data were taken from the",a(href= "https://diabimmune.broadinstitute.org/diabimmune/t1d-cohort", "Diabinmune"),"project, which consists of a public database of faecal metagenomic
                                       profiles from sequencing of the 16S rRNA region. The dataset includes 124 faecal samples with the metagenomic profile of infants",align = "justify"),
@@ -300,7 +300,7 @@ In the last section it is shown that the metagenomic signature obtained also wit
                                       socialButton(
                                         url = "https://www.linkedin.com/in/diego-fernández-edreira-a2a4391b9/",
                                         type = "linkedin"),
-                                      footer = "im a MSc bioinformatician at  University of A Coruña. Interested in computer science and 
+                                      footer = "I´m a MSc bioinformatician at  University of A Coruña. Interested in computer science and 
                                       multi-omics data analysis using Machine Learning.." 
                                     ),
                                     widgetUserBox(
@@ -317,7 +317,7 @@ In the last section it is shown that the metagenomic signature obtained also wit
                                       socialButton(
                                         url = "https://www.linkedin.com/in/jose-liñares-blanco-796608132/",
                                         type = "linkedin"),
-                                      footer = "Im a predoc student undertaking a PhD at the Univeristy of A Coruña and
+                                      footer = "I´m a predoc student undertaking a PhD at the Univeristy of A Coruña and
                                       affiliated researcher of the Centre of Information and Communications Technology
                                       Research (CITIC) studying computer science, genetics and machine learning with a particular focus on Cancer."
                                     ),
@@ -335,7 +335,7 @@ In the last section it is shown that the metagenomic signature obtained also wit
                                       socialButton(
                                         url = "https://www.linkedin.com/in/cafernandezlo/",
                                         type = "linkedin"),
-                                      footer = "Im assistant professor in Bioinformatics and Intelligent Systems at the 
+                                      footer ="I´m assistant professor in Bioinformatics and Intelligent Systems at the 
                                       University of A Coruña and affiliated researcher of the Institute of Biomedical
                                       Research of A Coruña (INIBIC) and of the Centre for Information and Communications 
                                       Technology Research (CITIC). My primary research interest is the understanding of
